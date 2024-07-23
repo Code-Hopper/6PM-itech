@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+
+    <!-- syntax for table in html -->
+
+    <!-- row and columns -->
+
+    <table border="1">
+
+        <!-- header -->
+
+        <thead> <!-- thead - table header -->
+
+            <tr> <!--tr table row-->
+
+                <!-- to create columns td - table data , th - table heading -->
+                <th>
+                    Name
+                </th>
+                <th>Roll</th>
+                <th>Class</th>
+                <th>Section</th>
+            </tr>
+
+        </thead>
+
+        <!-- body/main -->
+
+        <tbody> <!--tbody table body-->
+
+            <tr>
+                <td>Student 1</td>
+                <td>01</td>
+                <td>10<sup>th</sup></td>
+                <td>A</td>
+            </tr>
+
+
+            <tr>
+                <td>Student 2</td>
+                <td>02</td>
+                <td>10<sup>th</sup></td>
+                <td>A</td>
+            </tr>
+
+
+            <tr>
+                <td>Student 3</td>
+                <td>03</td>
+                <td>10<sup>th</sup></td>
+                <td>A</td>
+            </tr>
+
+
+
+            <tr>
+                <td>Student 4</td>
+                <td>04</td>
+                <td>10<sup>th</sup></td>
+                <td>A</td>
+            </tr>
+
+        </tbody>
+
+        <!-- footer  -->
+
+        <tfoot> <!--tfoot table footer-->
+
+            <tr>
+
+                <th colspan="4">End of table</th>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+    <!-- easy to create a table -->
+
+    <!-- <table border="1">
+
+        <tr>
+            <th>
+                heading 1
+            </th>
+            <th>
+                heading 2
+            </th>
+            <th>
+                heading 3
+            </th>
+            <th>
+                heading 4
+            </th>
+            <th>
+                heading 5
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                data 1
+            </td>
+            <td>
+                data 2
+            </td>
+
+            <td>
+                data 3
+            </td>
+
+            <td>
+                data 4
+            </td>
+
+            <td>
+                data 5
+            </td>
+
+        </tr>
+
+        <tr>
+
+        </tr>
+
+    </table> -->
+
+    <br><br>
+
+    <table border="1">
+
+        <tr>
+            <th>time table</th>
+            <th>10AM</th>
+            <th>12PM</th>
+            <th>2PM</th>
+            <th>4PM</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Games</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Games</td>
+        </tr>
+
+    </table>
+
+
+    <br>
+    <br>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">Monday</th>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>10AM</td>
+            <td>12PM</td>
+            <td>2PM</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+
+    <table border="1">
+
+        <tr>
+            <td>r1 c1</td>
+            <td>r1 c2</td>
+            <td>r1 c3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">r2 c1</td>
+            <td>r2 c2</td>
+            <td>r2 c3</td>
+        </tr>
+        <tr>
+            <td>r3 c1</td>
+            <td>r3 c2</td>
+        </tr>
+        <tr>
+            <td colspan="3">r4 c1</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
