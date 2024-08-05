@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 CSS</title>
+
+    <!-- rules for styling -->
+
+    <style>
+        /* we can write css rules here */
+    </style>
+
+
+    <!--   property: value;
+        property1: value2; -->
+
+    <!-- color, width, height (2D) -->
+
+    <!-- for external we have relate or link html and css page -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- internal, external, inline -->
+    <!-- if we write html and css in same page we call it internal css ,  -->
+
+    <!-- if we write html and css in diffrent page we call it external css ,  -->
+
+    <!-- if we want to write inline follow this syntax -->
+    <!-- no selection required -->
+    <tagname style="property:value;property2:value2;"></tagname>
+
+    <!-- div, section -->
+
+    <!-- class, id are attr -->
+
+    <tagname class="class1"></tagname>
+    <tagname class="class2"></tagname>
+    <tagname class="class3"></tagname>
+    <tagname class="class4"></tagname>
+
+    <!-- by writing class we create a class, class may contain multiple elements, to make a class of multiple element we just have to give them same class name -->
+
+    <tagname class="class1"> </tagname>
+    <tagname class="class1"> </tagname>
+    <tagname class="class1"> </tagname>
+    <tagname class="class1"> </tagname>
+    <tagname class="class1"> </tagname>
+
+    <!-- to make a element with multiple classes we have to sperate classname by "space"-->
+
+    <tagname class="class1 class2 class3"></tagname>
+
+    <!-- id -->
+    <tagname id="i1"></tagname>
+
+    <!-- we assign id to a element for unique identification, one per element -->
+
+
+
+    <!-- selector { 
+              property:value;
+              color : red;
+              width : 100cm;
+              height : 100cm;
+              background-color : black;
+          } -->
+
+    <!-- selector are used in internal css and external css only -->
+
+    <!-- genral selector -->
+    <!-- universal selector , by tagname, by classname, by id -->
+
+    <!-- 
+        it selects every element in a html doc, universal selector
+        * {
+            property:value;
+        }
+    -->
+
+    <!-- 
+        it selects every tag from the html doc
+        tagname {
+            property: value;
+        }
+
+        h1 {
+            color:red;
+        }
+
+    -->
+
+    <!-- 
+        it selects every element of writen class
+        .classname {
+            property:value;
+        }
+
+     -->
+
+    <!-- 
+        to select unique element
+
+        #id {
+            property:value;
+        }
+
+     -->
+
+
+     <p>
+        Lorem ipsum, dolor sit <span id="word">amet</span> consectetur adipisicing elit. Reprehenderit, nemo?
+     </p>
+
+     <!-- 
+        #word {
+            color:red;
+        }
+     -->
+
+</body>
+
+</html>
