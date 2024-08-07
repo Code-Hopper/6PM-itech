@@ -1,34 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
- 
- /* selector {
+
+/* selector {
     property:value;
  } */
 
- /* * universal, tagname, .classname, #id */
+/* * universal, tagname, .classname, #id */
 
- /* colors, font, margin & padding this are written universally */
+/* colors, font, margin & padding this are written universally */
 
- /* color: red; */
- /*solid color (red, green, yellow), hex code (starts with # followed 4 - 6 char range 0-9 a-f), rgb(red,green,blue) range 0-255, rgba() */
+/* color: red; */
+/*solid color (red, green, yellow), hex code (starts with # followed 4 - 6 char range 0-9 a-f), rgb(red,green,blue) range 0-255, rgba() */
 
- .first {
-    /* color: #EB3678; */
-    color: rgba(255, 0, 0, 0.5);
-    /* color property is for content */
-    /* rgb(24, 1, 97)
+.first {
+   /* color: #EB3678; */
+   color: rgba(255, 0, 0, 0.5);
+   /* color property is for content */
+   /* rgb(24, 1, 97)
     rgb(235, 54, 120)
     cny */
-    /* rgba(0,0,0,0-1) */
-    background-color: rgba(255, 0, 255,0.5);
-    /* background-color property is for background */
-    font-family: "Silkscreen", sans-serif;
+   /* rgba(0,0,0,0-1) */
+   background-color: rgba(255, 0, 255, 0.5);
+   /* background-color property is for background */
+   font-family: "Silkscreen", sans-serif;
+   /* we change writing style of text by assigning font family value to font-family: property */
+}
 
- }
+body {
+   color: white;
+   background-color: black;
+   /* height: 500px; */
+   /* initialy body has 0 height, later on the space required to hold the content become the total height of body and width is always 100% to the screen size*/
+}
 
- body {
-    color: white;
-    background-color: black;
- }
+#img1 {
+   width: 500px;
+   height: 250px;
+}
 
- /* font */
+#d1 {
+   height: 250px;
+   width: 250px;
+   /* external height and width */
+   /* this width and height are assigned by us that why it is external */
+   background-color: red;
+}
+
+/* font */
+
+/* percentage, will always be calculated based on total width/height of a parent element */
+
+/* % this unit will help to give relative width & height */
+
+.parent {
+   width: 50%;
+   height: 500px;
+   background-color: blue;
+}
+
+.child {
+   width: 50%;
+   /* 250px */
+   height: 75%;
+   /* 375px */
+   background-color: white;
+}
+
+.child2 {
+   background-color: red;
+   width: 50%;
+   /*125*/
+   height: 50%;
+   /*187.5*/
+}
