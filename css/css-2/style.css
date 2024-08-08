@@ -40,7 +40,7 @@ body {
 
 #d1 {
    height: 250px;
-   width: 250px;
+   width: 1em;
    /* external height and width */
    /* this width and height are assigned by us that why it is external */
    background-color: red;
@@ -68,8 +68,37 @@ body {
 
 .child2 {
    background-color: red;
+   /* width: 50vw; */
    width: 50%;
    /*125*/
+   /* height: 500vh; */
    height: 50%;
    /*187.5*/
+}
+
+
+/* view port height, width */
+
+/* 100vh , 100vw */
+
+.text-class {
+   /* font-size will be applied on text-class elements and their child elements  */
+   font-size: 50px;
+   /* 1em = 50px */
+}
+
+/* #d2 is a child element from text-class */
+#d2 {
+   background-color: yellow;
+   width: 1em;
+   /* 1 * 50 */
+   height: 5em;
+   /* 5 * 50 */
+}
+
+/* html is called as root element */
+html {
+   font-size: 100px;
+   /* 1rem = 50px */
+   /* this is for all */
 }
