@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units</title>
+    <!-- px % vh vw em rem -->
+
+    <style>
+
+        html{
+            font-size: 20px;
+            /* 1rem = 20px */
+        }
+
+        /* vw vh - viewport (width) (height) */
+
+        #d1{
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+        }
+
+        /* width : 100vw
+        height : 100vh */
+
+        #parent{
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+
+            /* 1em */
+
+            font-size: 10px;
+
+            /* 1em = 10px */
+
+            /* font */
+
+        }
+
+        #child{ 
+            width: 50%;
+            height: 10em;
+            background-color: black;
+        }
+
+        #child2{ 
+            width: 50%;
+            height: 10rem;
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- dimensions (width and height) -->
+    <div id="d1">
+
+    </div>
+
+    <div id="parent">
+        <div id="child">
+
+        </div>
+        <div id="child2"></div>
+    </div>
+
+</body>
+</html>
