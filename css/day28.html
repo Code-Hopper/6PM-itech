@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- margin, padding, border, outline -->
+    <!-- using box model css we can calculate the actuall height and width of any element -->
+    <!-- height: 250px -->
+    <!-- width: 250px -->
+    <!-- basic calculation using box model -->
+    <!-- margin top + border top + padding top + height + padding bottom + border bottom + margin bottom = actual height -->
+
+    <!-- 10 + 10 + 20 + 300 + 20 + 10 + 10 = 380 -->
+
+    <!-- 25 + 10 + 20 + 300 + 20 + 10 + 25 = 410 -->
+
+    <!-- margin left + border left + padding left + width + padding right + border right + margin right = actual width -->
+
+    <style>
+        #d1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            color: white;
+            font-family: sans-serif;
+
+            /* padding | top right bottom left */
+
+            /* padding: 10px; */
+            /* this indicates all directions have same padding */
+            /* padding-top: 50px;
+            padding-right: 25px;
+            padding-bottom: 20px;
+            padding-left: 10px; */
+            /* shortcuts */
+            /* padding: 10px 25px 15px 5px; */
+            /* padding: top-bottom left-right; */
+            /* padding: 50px 25px; */
+            padding: 20px;
+            /* margin | top right bottom left */
+            /* margin: 50px; */
+            /* margin-top: 50px;
+            margin-right: 25px;
+            margin-bottom: 20px;
+            margin-left: 10px; */
+            /* margin: 10px 25px 15px 5px; */
+            margin: 25px;
+
+            /* border */
+            /* width/size, style, color */
+
+            /* border: 15px solid rgba(0,0,0,1);
+            border-top: 0;
+            border-right: 0; */
+            /* border-bottom: 0; */
+            /* border-left: 0; */
+            /* border-width: 25px;
+            border-style: solid;
+            border-color: black; */
+
+            /* border: 0 solid black; */
+            /* border-top: 100px solid black;
+            border-left: 10px solid black;
+            border-bottom: 5px solid black;
+            border-right: 25px solid black; */
+
+            border: 10px solid black;
+            /* border-top: 10px dashed yellow; */
+
+            /* outline: 10px solid blue; */
+            box-sizing: border-box;
+        }
+
+        #d2{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+
+        /* positioning | postion | relative static sticky fixed absolute */
+
+    </style>
+</head>
+
+<body>
+
+    <div id="d1">
+        <h1>Element</h1>
+    </div>
+
+    <div id="d2">
+        <h1>Element d2</h1>
+    </div>
+
+</body>
+
+</html>
