@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <!-- multi dimensional layout(row & column)-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            margin: 1rem;
+            width: 800px;
+            height: 800px;
+            border: 10px solid black;
+            display: grid;
+            gap: 1rem;
+            /* fr */
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(4,1fr);
+            /* repeat() */
+        }
+
+        .child {
+            /* width: 200px;
+            height: 200px; */
+            background-color: red;
+            font-weight: bold;
+            color: white;
+        }
+
+        .c1{
+           grid-column-start: 1;
+           grid-column-end: 3;
+           grid-row-start: 1;
+           grid-row-end: 3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child c1">child 1 </div>
+        <div class="child c2">child 2 </div>
+        <div class="child c3">child 3 </div>
+        <div class="child c4">child 4 </div>
+        <div class="child c5">child 5 </div>
+        <div class="child c6">child 6 </div>
+        <div class="child c7">child 7 </div>
+        <div class="child c8">child 8 </div>
+        <div class="child c9">child 9 </div>
+        <div class="child c10">child 10 </div>
+    </div>
+
+</body>
+
+</html>

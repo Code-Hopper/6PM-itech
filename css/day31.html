@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+
+        /* layouts */
+        /* flex layout(single | row / column ) | grid layout (multi | rows and columns) */
+
+        /* parent */
+
+        /* display:  */
+        /* none , inline, block , inline-block, flex, grid */
+
+
+
+
+        #element1{
+            width: 250px;
+            height: 250px;
+            background-color: yellow;
+            /* display: none; */
+            /* it remove the element from the flow/canvas */
+            /* display: inline; */
+            /* it allows other elements in same row, it does not supports any external height and width */
+            /* display: block; */
+            /* it won't allows other elements in same row, it does supports any external height and width */
+            display: inline-block;
+            /* it allows other elements in same row, it does supports any external height and width */
+        }
+        #element2{
+            width: 250px;
+            height: 250px;
+            background-color: black;
+            color: white;
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="element1">
+        this is some data 1
+    </div>
+    <div id="element2">
+        this is some data 2
+    </div>
+
+</body>
+</html>
