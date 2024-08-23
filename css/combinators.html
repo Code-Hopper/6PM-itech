@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- RWD -->
+    <!-- * , tagname, classname, id  -->
+
+    <style>
+        h1 {
+            color: red;
+        }
+
+        /* element space element { }  grandchild selector. element > element { } direct child */
+
+        /* .d1 h1 {
+            color: blue;
+        } */
+
+        .d1>h1 {
+            color: aqua;
+        }
+
+        .d1~h1 {
+            color: purple;
+        }
+
+        .d1+h1 {}
+
+        .element1 , .element2 {
+            color: yellow;
+        }
+
+        .d1 h1:nth-child(2){
+            color: blueviolet !important;
+        }
+
+        .d1:hover{
+            background-color: red;
+        }
+
+        /* ::before ::after */
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="d1">
+        <h1>this is heading</h1>
+        <h1>this is some other heading</h1>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <h1>grand child element</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>this is also some heading</h1>
+    </div>
+
+    <h1>thiasndljn</h1>
+
+    <h2 class="element1">this is element 1</h2>
+    <h2 class="element2">this is element 2</h2>
+
+
+</body>
+
+</html>

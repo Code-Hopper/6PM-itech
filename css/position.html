@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /* position */
+        /* static(default), relative, absolute, fixed, sticky */
+        /* top: , bottom: ,left: ,right: , z-index: */
+
+        body {
+            height: 500vh;
+        }
+
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* position: static; */
+            /* this won't allow any change. */
+            /* position: relative; */
+            /* we can move a element, it retains it's original position */
+            /* position: absolute; */
+            /* a element a freely move in the canvas */
+            /* position: fixed; */
+            position: relative;
+            top: 0;
+            left: 0;
+            /* bottom: 0; */
+            /* right: 0; */
+            z-index: 2;
+        }
+
+        #box2 {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            z-index: 1;
+            /* position: relative; */
+            /* left: 500px; */
+        }
+
+        #box3 {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: sticky;
+            /* apply this value to the direct child only */
+            left: 250px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+
+</html>

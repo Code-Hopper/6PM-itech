@@ -29,29 +29,43 @@
         }
 
         .c1 {
-            grid-row-start: 1;
-            grid-row-end: 2;
-            grid-column-start: 1;
-            grid-column-end: 4;
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+
+            grid-row: 1 / 2;
+
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+
+            grid-column: 1 / 4;
+            /* grid-column: 1 / span 3; */
+
         }
 
         .c2 {
-            grid-row-start: 2;
-            grid-row-end: 4;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            /* grid-row: 2 / 4; */
+            grid-row: 2 / span 2;
         }
 
         .c3 {
-            grid-row-start: 2;
+            /* grid-row-start: 2;
             grid-row-end: 3;
             grid-column-start: 2;
-            grid-column-end: 4;
+            grid-column-end: 4; */
+            grid-row: 2 / 3;
+            grid-column: 2 / 4;
         }
 
         .c6{
-            grid-row-start: 4;
+            /* grid-row-start: 4;
             grid-row-end: 5;
             grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-end: 4; */
+            grid-row: 4 / 5;
+            /* grid-column: 1 / 4; */
+            grid-column: 1 / span 3;
         }
 
     </style>
