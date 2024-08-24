@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child</title>
+    <style>
+        div:nth-child(3) {
+            background-color: red;
+            color: white;
+        }
+
+        h1:nth-child(3) {
+            color: green !important;
+        }
+
+        ul:nth-child(1) li:nth-child(1) {
+            font-weight: bold;
+            color: red;
+            content: "asdasd";
+        }
+
+        /* pseudo elements */
+        /* ::before / ::after / ::placeholder */
+
+        #element1::before{
+            content: "kuch bhi ";
+        }
+
+        #element1::after{
+            content: " bas !";
+        }
+
+
+        #i1::placeholder{
+            color: black;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="element1">element</h1>
+
+    <input id="i1" placeholder="this is placeholder" type="text">
+
+    <div>
+        <div>this is div</div>
+        <div>this is div</div>
+    </div>
+
+    <a href="">click here</a>
+
+    <div>
+        <div>this is div</div>
+        <div>this is div</div>
+        <div>this is div 3</div>
+    </div>
+
+    <div>
+        <h1>this is headings</h1>
+        <h1>this is headings</h1>
+        <h1>this is headings</h1>
+
+    </div>
+
+    <h1>this is headings</h1>
+    <h1>this is headings</h1>
+
+    <div>
+        <ul>
+            <li>list 1 item 1</li>
+            <li>list 1 item 2</li>
+            <li>list 1 item 3</li>
+            <li>list 1 item 4</li>
+            <li>list 1 item 5</li>
+        </ul>
+
+        <ul>
+            <li>list 2 item 1</li>
+            <li>list 2 item 2</li>
+            <li>list 2 item 3</li>
+            <li>list 2 item 4</li>
+            <li>list 2 item 5</li>
+        </ul>
+
+        <ul>
+            <li>list 3 item 1</li>
+            <li>list 3 item 2</li>
+            <li>list 3 item 3</li>
+            <li>list 3 item 4</li>
+            <li>list 3 item 5</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

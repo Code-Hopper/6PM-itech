@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+
+    <style>
+        #element1{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border-radius: 0;
+            transition: all 0.5s ease;
+        }
+
+        #element1:hover{
+            width: 500px;
+            border-radius: 100%;
+            background-color: black;
+        }
+
+        #input1:focus{
+            background-color: red;
+        }
+
+        #input1{
+            background-color: green;
+        }
+
+        /* focus / blur */
+
+        a{
+            text-decoration: none;
+        }
+
+        a:link{
+            color: red !important;
+        }
+
+        a:visited{
+            color: yellow;
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        a:active{
+            color: aqua !important;
+        }
+
+        /* :nth-child(n) */
+        /* it select the groups of selector */
+
+        div:nth-child(0){
+            background-color: red !important;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- <div id="element1"></div> -->
+
+    <input id="input1" type="text">
+
+    <br>
+
+    <a href="./">click here 1</a>
+    <a href="">click here 2</a>
+    <a href="https://yoursite.com">click here 3</a>
+
+    <!-- link, visited, hover, active -->
+
+    <div class="text">this is heading 1</div>
+    <div class="text">this is heading 2</div>
+    <div class="text">this is heading 3</div>
+    <div class="text">this is heading 4</div>
+    <div class="text">this is heading 5</div>
+
+</body>
+</html>
