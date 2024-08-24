@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+
+        .parent{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .child{
+            padding: 1rem;
+            border: 5px solid black;
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width: 576px) {
+            .parent{
+                flex-direction: column;
+            }  
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child c-1">child 1</div>
+        <div class="child c-2">child 2</div>
+        <div class="child c-3">child 3</div>
+    </div>
+
+</body>
+</html>

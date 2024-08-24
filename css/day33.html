@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- max-width / height -->
+    <!-- min-width / height -->
+
+    <style>
+
+        #element1{
+            width: 200px;
+            /* min-width: 25%;
+            max-width: 50%; */
+            height: 200px;
+            /* min-height: 100px;
+            max-height: 500px; */
+            background-color: black;
+        }
+
+        /* breakpoints */
+        /* max-width : 576px : mobile */
+        /* min-width : 576px, max-width: 990px : tablet */
+        /* min-width: 990px | desktop/laptop */
+
+        body{
+            background-color: red;
+        }
+
+        /* media query | it can create  */
+
+        @media screen and (max-width: 576px){
+            /* mobile */
+            body{
+                background-color: green;
+            }
+            #element1{
+                width: 50px;
+                height: 50px;
+                background-color: pink;
+            }
+        }
+
+        @media screen and (min-width:576px) and (max-width: 990px){
+            /* tablet */
+            body{
+                background-color: blue;
+            }
+
+            #element1{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="element1">
+        
+    </div>
+
+</body>
+</html>
