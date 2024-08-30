@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .main-container {
+            width: 100%;
+            min-height: 800px;
+            position: relative;
+        }
+
+        .main-container>.child-1 {
+            padding: 8rem 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .child-1 h1 {
+            font-size: 4rem;
+            color: red;
+        }
+
+        .child-1 h3 {
+            font-size: 2.5rem;
+        }
+
+        .child-1 span {
+            font-weight: bold;
+            color: red;
+        }
+
+        .child-2 {
+            width: 85%;
+            background-color: black;
+            border-radius: 14px;
+            color: white;
+            padding: 3rem 3rem;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .child-2>div {
+            padding: 1% 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .child-2>div>button {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 1%;
+            border-radius: 24px;
+            border: none;
+            outline: none;
+        }
+
+        .child-3 {
+            background-color: red;
+            border-radius: 14px 14px 0 0;
+            padding: 10rem 10rem 8rem 10rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .footer-logo>div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-child>ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-child ul li:nth-child(1) {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .footer-navigation,
+        .footer-contact,
+        .footer-blog {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .footer-navigation a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .end-line {
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="child child-1">
+            <h1>Wed Development</h1>
+            <h3>Create Responsive Web Designs !</h3>
+            <span>
+                [ HTML | CSS | JavaScript ]
+            </span>
+        </div>
+        <div class="child child-2">
+            <div>
+                <div class="heading-text">
+                    <h1>Start Learnign Now</h1>
+                    <p>
+                        only starting @ Rs. 9999/- for 3 months.
+                    </p>
+                </div>
+                <button>Join The Course</button>
+            </div>
+        </div>
+        <div class="child child-3 footer-container">
+            <div class="footer-child footer-logo">
+                <div>
+                    <i class="fa-solid fa-pen-nib fa-3x" style="color: white;"></i>
+                    <h1>Logo Here</h1>
+                </div>
+            </div>
+            <div class="footer-child">
+                <ul class="footer-navigation">
+                    <li>Navigation</li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Login</a>
+                    </li>
+                    <li>
+                        <a href="">Join</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <ul class="footer-contact">
+                    <li>Contact</li>
+                    <li>
+                        <div>
+                            <i class="fa-regular fa-envelope-open"></i>
+                            <span>info@sample.com</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                            <span>@code-hooper</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>linkedin profile</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <ul class="footer-blog">
+                    <li>Blog</li>
+                    <li>What is web dev ?</li>
+                    <li>What is JavaScript ?</li>
+                    <li>How to learn coding languages ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="end-line">
+        <center>
+            <b>
+                <span>All rights reserved &copy code-hopper</span>
+            </b>
+        </center>
+    </div>
+</body>
+
+</html>
