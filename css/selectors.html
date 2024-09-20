@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+
+    <style>
+        .a {
+            width: 200px;
+            background-color: red;
+            height: 200px;
+        }
+
+        .a ~ .b {
+            /* direct child select */
+            width: 400px;
+            height: 100px;
+            background-color: blue;
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease; */
+            /* transition-delay: 2s; */
+            transform: scaleX(2) scaleY(0.5);
+            transition: all 1s ease 2s;
+        }
+
+        .a:hover ~ .b{
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            background-color: black;
+        }
+
+        /* :hover , (:link, :active, :visited) , :focus. :nth-child() */
+        /* ::after ::before ::placeholder */
+
+
+        span::after{
+            content: " this is after";
+            background-color: red;
+            color: white;
+        }
+
+        span::before{
+            content: " this is before ";
+            background-color: red;
+            color: white;
+        }
+
+        input::placeholder{
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="a">
+
+        <div class="b">
+            <div class="c"></div>
+        </div>
+
+    </div>
+
+    <div class="c"></div>
+
+    <div class="b"></div>
+    <div class="d"></div>
+
+
+    <span>this is an element</span>
+
+
+    <input type="text" placeholder="this is placeholder">
+
+</body>
+
+</html>
