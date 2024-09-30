@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .element1 {
+            width: 100%;
+            height: 300px;
+            background-color: red;
+            padding: 1% 0;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .child {
+            flex-grow: 1;
+            flex-basis: calc(25% - 1rem);
+            border: 2px solid peru;
+        }
+
+        /* mobile */
+        @media screen and (max-width: 576px) {
+            .element1 {
+                background-color: blue;
+                /* flex-direction: column; */
+            }
+
+            .child {
+                flex-grow: 1;
+                flex-basis: 100%;
+                border: 2px solid peru;
+            }
+        }
+
+        /* tablet */
+        @media screen and (min-width: 576px) and (max-width: 990px) {
+
+            .element1 {
+                background-color: green;
+            }
+
+            .child {
+                flex-grow: 1;
+                flex-basis: calc(33% - 1rem);
+                border: 2px solid peru;
+            }
+
+        }
+
+        .parent {
+            width: 100%;
+            height: 300px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            border: 2px solid black;
+            flex-wrap: wrap;
+        }
+
+        .a{
+            width: 200px;
+            /* height: 200px; */
+            background-color: white;
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="element1">
+        <div class="child child-1"></div>
+        <div class="child child-2"></div>
+        <div class="child child-3"></div>
+        <div class="child child-4"></div>
+        <div class="child child-5"></div>
+        <div class="child child-6"></div>
+        <div class="child child-7"></div>
+        <div class="child child-8"></div>
+    </div>
+
+    <div class="parent">
+        <div class="a"></div>
+        <div class="a"></div>
+    </div>
+
+</body>
+
+</html>
