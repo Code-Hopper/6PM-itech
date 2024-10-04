@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .navbar-main-container {
+            padding: 1rem 10rem;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-menu {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .dropdown-container{
+            position: relative;
+        }
+
+        .dropdown-menu{
+            display: none;
+            list-style: none;
+            background-color: white;
+            color: black;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            /* padding: 0rem 3rem; */
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .dropdown-menu-item{
+            padding: 1rem;
+            text-align: center;
+            font-weight: 400;
+            border-bottom: 1px solid rgba(0,0,0,0.75);
+        }
+
+        .dropdown-container:hover > .dropdown-menu{
+            display: initial;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar-main-container">
+        <h1 class="logo">Logo</h1>
+        <ul class="main-menu">
+            <li class="menu-item">
+                <a href="" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+                <div class="dropdown-container">
+                    <!-- trigger -->
+                    <a href="" class="menu-link dropdown-trigger">Service</a>
+                    <!-- dropdown content -->
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item">dropdown-item-1</li>
+                        <li class="dropdown-menu-item">dropdown-item-2</li>
+                        <li class="dropdown-menu-item">dropdown-item-3</li>
+                        <li class="dropdown-menu-item">dropdown-item-4</li>
+                        <li class="dropdown-menu-item">dropdown-item-5</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">Contact</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

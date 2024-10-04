@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            background-color: red;
+            width: 500px;
+            height: 300px;
+            transition: all 1.5s ease;
+        }
+
+        #sidebar .sidebar-trigger {
+            padding: 0.5rem 1rem;
+            position: absolute;
+            right: calc(100% - 1rem);
+            top: 0;
+            transform: rotate(-090deg);
+            transition: all 1.5s ease;
+            border: 0;
+        }
+
+        #sidebar:hover {
+            background-color: red;
+            position: fixed;
+            top: 50%;
+            left: calc(100% - 500px);
+            transform: translateY(-50%);
+            background-color: red;
+            width: 500px;
+            height: 300px;
+        }
+
+        #sidebar:hover .sidebar-trigger{
+            transform: rotate(0deg);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <button class="sidebar-trigger">
+            open
+        </button>
+        <div class="sidebar-content"></div>
+    </div>
+
+</body>
+
+</html>
